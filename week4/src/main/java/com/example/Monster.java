@@ -23,13 +23,14 @@ public class Monster implements Serializable {
 
     public boolean takeDamage(int dmg){
         this.Health = this.Health-dmg;
-        System.out.println("Hirviöllä on "+ this.Health + " elämää jäljellä.");
+        
         if (this.Health <= 0){
             
             return true;
                 // this poistaa siis kyseisen olion mikä kutsui tätä ohjelmaa eli playerissa Target olio indeksillä x
         }
         else{
+            System.out.println("Hirviöllä on "+ this.Health + " elämää jäljellä.");
             return false;
         }
 
