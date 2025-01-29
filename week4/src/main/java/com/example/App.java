@@ -55,7 +55,12 @@ public class App {
 
                     case 2:
                     //menee Listmonster ohjelmaan
+
                     cave.listMOnsters();
+                    if (cave.monsterList.isEmpty()){
+                        System.out.println("Luola on tyhjä.");
+                    }
+        
                     break;
 
                     case 3:
@@ -87,7 +92,7 @@ public class App {
 
                     case 0:
                     exit = true;
-                    System.out.println("Kiitos ohjelman käytöstä.");
+                    System.out.println("Peli päättyy, Kiitos pelaamisesta!");
                     break;
 
                     default:

@@ -35,7 +35,7 @@ public class Cave implements Serializable {
 
     public void listMOnsters(){
 
-        
+        System.out.println("Luolan hirviöt:");
         for (int i = 0; i < monsterList.size(); i++){
             monsterList.get(i).Printinfo(i+1);
             
@@ -60,7 +60,7 @@ public class Cave implements Serializable {
             Cave loadedCave = (Cave) gameReader.readObject();
             this.monsterList = loadedCave.monsterList;
             this.player = loadedCave.player;
-            
+
             gameReader.close();
 
         } catch (Exception e) {
