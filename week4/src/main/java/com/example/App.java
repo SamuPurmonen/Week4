@@ -92,7 +92,7 @@ public class App {
 
                     case 0:
                     exit = true;
-                    System.out.println("Peli päättyy, Kiitos pelaamisesta!");
+                    System.out.println("Peli päättyy. Kiitos pelaamisesta!");
                     break;
 
                     default:
