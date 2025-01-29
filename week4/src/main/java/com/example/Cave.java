@@ -46,6 +46,7 @@ public class Cave implements Serializable {
         try {
             ObjectOutputStream gameWriter = new ObjectOutputStream(new FileOutputStream(saveFileName));
             gameWriter.writeObject(this);
+            System.out.println("Peli tallennettiin tiedostoon " + saveFileName + ".");
 
         } catch (IOException e) {
             System.out.println("vituiks män.");
@@ -60,6 +61,7 @@ public class Cave implements Serializable {
             Cave loadedCave = (Cave) gameReader.readObject();
             this.monsterList = loadedCave.monsterList;
             this.player = loadedCave.player;
+            System.out.println("Peli ladattu tiedostosta "+ saveFileName+". Tervetuloa takaisin, "+ player.name + ".");
 
             gameReader.close();
 

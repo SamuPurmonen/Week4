@@ -72,8 +72,9 @@ public class App {
                     cave.player.attack(cave.monsterList.get(Target-1));
                     
                     if (cave.monsterList.get(Target-1).Health<= 0){
-
+                        System.out.println( cave.monsterList.get(Target-1).type  +" on kuollut!");
                         cave.monsterList.remove(Target-1);
+
                     }
                     break;
 
