@@ -55,8 +55,11 @@ public class App {
 
                     case 2:
                     //menee Listmonster ohjelmaan
-
+                    if (monsterList.size()>0){
+                        System.out.println("Luolan hirviöt:");
+                        }
                     cave.listMOnsters();
+
                     if (cave.monsterList.isEmpty()){
                         System.out.println("Luola on tyhjä.");
                     }
