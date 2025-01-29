@@ -32,6 +32,9 @@ public class Cave implements Serializable {
 
     }
 
+    public void addMonster(Monster monster){
+        AddMonster(monster.type, monster.Health);
+    }
 
     public void listMOnsters(){
 
