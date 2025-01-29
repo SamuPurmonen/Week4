@@ -55,7 +55,7 @@ public class App {
 
                     case 2:
                     //menee Listmonster ohjelmaan
-                    if (monsterList.size()>0){
+                    if (cave.monsterList.size()>0){
                         System.out.println("Luolan hirviöt:");
                         }
                     cave.listMOnsters();
