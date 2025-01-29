@@ -23,6 +23,7 @@ public class Monster implements Serializable {
 
     public boolean takeDamage(int dmg){
         this.Health = this.Health-dmg;
+        System.out.println("Hirviöllä on "+ this.Health + " elämää jäljellä.");
         if (this.Health <= 0){
             
             return true;
